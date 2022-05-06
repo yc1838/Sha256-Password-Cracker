@@ -1,0 +1,11 @@
+For this part 1, I will ask the user for input of hashed password, salt and the txt file they plan to use. Then I will tell them how long it used to find the password in seconds, and how many guesses we made in average per microsecond. I used the rockyou.txt file I found out online to find out that the admin password is admin password, which correspond to the hashed password 000000000000000000000000000078d2$18821d89de11ab18488fdc0a01f1ddf4d290e198b0f80cd4974fc031dc2615a3 using the salt 000000000000000000000000000078d2.
+
+Please put in the target hashed password first: 
+000000000000000000000000000078d2$18821d89de11ab18488fdc0a01f1ddf4d290e198b0f80cd4974fc031dc2615a3
+Please enter the salt: 
+000000000000000000000000000078d2
+Please enter the file name and it has to be in the same directory: 
+rockyou.txt
+time lapsed is 2.420299768447876 seconds.
+We found the password which is adminpassword
+average guess per second is 855369.2509451584
