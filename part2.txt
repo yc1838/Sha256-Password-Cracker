@@ -1,0 +1,15 @@
+performance: average guess per second is 2.3, which is much slower than part 1. Average guesses per second for part 1 was 855369.
+This time, when I tried to run the whole rockyou.txt list it has been running forever. Therefore I used a short version of the list which is basically the first 15 words from the original rockyou.txt file plus the "adminpassword" since from part 1 I know this is the real password for the admin account. For these 16 passwords it took 6.96 seconds which means in average we made 2.3 guesses per second. 
+
+Below is the command line history:
+
+First, please enter the username: 
+admin
+Second, please enter the txt file name: 
+rockyou.txt
+time lapsed is 6.96 seconds.
+average guess per second is 2.3
+We found the password which is adminpassword
+
+The easiest way I can think of is to record where these post requests come from and if there are more than 3 times wrong password entered for the same account within a short period of time the account should be preventing any password tries for like 30 minutes or so, and if the same account receive more than a certain number of log in bans then it should be locked because it is very likely to be some kind of similar attack happening. And maybe some mechanism for locked account recovery like calling the customer service, etc. We can also use Duo authentication to prevent the success of this kind of password attack. 
+
